@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/* 
+  Foolproof Theme System
+  We use data-theme attribute to swap colors globally.
+*/
+
+:root {
+  /* Default: Classic Theme (Orange) */
+  --brand-main: #FF6B1A;
+  --brand-light: #FF823C;
+  --brand-bg: #FFF9F5;
+  --brand-border: #FFE4D3;
+  --brand-text: #8B4513;
+  --brand-page: #FDFCFB;
+}
+
+[data-theme="fresh"] {
+  /* Fresh Theme (Green) */
+  --brand-main: #16A34A;
+  --brand-light: #22C55E;
+  --brand-bg: #F0FDF4;
+  --brand-border: #DCFCE7;
+  --brand-text: #166534;
+  --brand-page: #F7FDF9;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--brand-page);
+    transition: background-color 0.5s ease;
+}
+
+/* Scrollbar Theming */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--brand-border);
+    border-radius: 10px;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slide-up {
+    animation: slideInUp 0.5s ease-out forwards;
+}
