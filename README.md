@@ -1,14 +1,15 @@
 ---
 title: AI Recipe Chatbot
 emoji: 🍳
-colorFrom: orange
-colorTo: yellow
+colorFrom: yellow
+colorTo: red
 sdk: docker
 pinned: false
 ---
+
 # 🍳 AI Recipe Chatbot
 
-An AI-powered Recipe Chatbot built using React, Flask, and Groq API that generates personalized recipes through a modern conversational interface.
+AI Recipe Chatbot is a modern AI-powered cooking assistant built with React, Flask, and Groq API that generates personalized recipes through a chatbot interface. 🌙✨ It features dark mode, animated UI, markdown responses, category filters, and search history.
 
 ---
 
@@ -17,8 +18,8 @@ An AI-powered Recipe Chatbot built using React, Flask, and Groq API that generat
 - 🤖 AI recipe generation using Groq API
 - 💬 Modern chatbot interface
 - 🌙 Dark mode UI
-- 📜 Markdown formatted AI responses
-- ⚡ Framer Motion animations
+- ⚡ Smooth animations
+- 📜 Markdown formatted responses
 - 🔍 Category filters
 - 🕘 Search history
 - ⏳ Loading spinner
@@ -59,9 +60,11 @@ ai-recipe-chatbot/
 │
 ├── frontend/
 │   ├── src/
+│   ├── public/
 │   ├── package.json
 │   └── vite.config.js
 │
+├── Dockerfile
 ├── .gitignore
 └── README.md
 ```
@@ -70,7 +73,7 @@ ai-recipe-chatbot/
 
 ## ⚙️ Installation
 
-# 1️⃣ Clone Repository
+### 1️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/ai-recipe-chatbot.git
@@ -78,7 +81,7 @@ git clone https://github.com/YOUR_USERNAME/ai-recipe-chatbot.git
 
 ---
 
-# 2️⃣ Backend Setup
+### 2️⃣ Backend Setup
 
 ```bash
 cd backend
@@ -94,7 +97,7 @@ GROQ_API_KEY=your_groq_api_key
 
 ---
 
-# 3️⃣ Frontend Setup
+### 3️⃣ Frontend Setup
 
 ```bash
 cd frontend
@@ -104,7 +107,7 @@ npm install
 
 ---
 
-# 4️⃣ Run Project
+### 4️⃣ Run Project
 
 From backend folder:
 
@@ -117,7 +120,6 @@ npm run dev
 ## 🧠 AI Model
 
 This project uses:
-
 - Groq API
 - Llama 3 Model
 
@@ -141,17 +143,9 @@ Quick dinner recipes under 20 minutes
 
 ## 🌐 Deployment
 
-### Frontend
-- Vercel
-
-### Backend
-- Render
-
----
-
-## 📸 UI Preview
-
-Add your project screenshots here.
+### Frontend + Backend
+- Hugging Face Spaces
+- Docker Deployment
 
 ---
 
