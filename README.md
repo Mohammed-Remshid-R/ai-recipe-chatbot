@@ -1,3 +1,11 @@
+---
+title: AI Recipe Chatbot
+emoji: 🍳
+colorFrom: orange
+colorTo: yellow
+sdk: docker
+pinned: false
+---
 # 🍳 AI Recipe Chatbot
 
 An AI-powered Recipe Chatbot built using React, Flask, and Groq API that generates personalized recipes through a modern conversational interface.
